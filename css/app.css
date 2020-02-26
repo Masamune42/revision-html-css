@@ -1,0 +1,6 @@
+/*Permet d'afficher les bordures du tableau*/
+table, th, td {
+    border: 1px solid black;
+    /*Pas de double bordure*/
+    border-collapse: collapse;
+}

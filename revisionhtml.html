@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Révision</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<ol>
+    <li><a href="#balises">Balises</a></li>
+    <li><a href="#formulaire">Formulaires</a></li>
+    <li><a href="#multimedia">Multimédia</a></li>
+</ol>
+
+<h1 id="balises">Balises de base</h1>
+<ol>
+    <li><a href="#images">Images</a></li>
+    <li><a href="##liste">Listes</a></li>
+</ol>
+<p>Paragraphe</p>
+
+<h2 id="#liste">Liste non ordonnée</h2>
+<h3>Sans style CSS :</h3>
+<ul>
+    <li>Fromage</li>
+    <li>Lessive</li>
+    <li>Dentifrice</li>
+</ul>
+
+<h3>Avec style CSS :</h3>
+<ul style="list-style-type: circle">
+    <li>Fromage</li>
+    <li>Lessive</li>
+    <li>Dentifrice</li>
+</ul>
+
+
+<h2>Liste ordonnée</h2>
+<h3>Type numérique :</h3>
+<ol>
+    <li>Steins;Gate</li>
+    <li>Gundam 00</li>
+    <li>Ergo Proxy</li>
+</ol>
+
+<h3>Type alphabétique :</h3>
+<ol type="a">
+    <li>Steins;Gate</li>
+    <li>Gundam 00</li>
+    <li>Ergo Proxy</li>
+</ol>
+
+<h2>Séparateur :</h2>
+<hr>
+
+<h2>Tableau</h2>
+<table>
+    <tr>
+        <th>Titre Colonne 1</th>
+        <th>Titre Colonne 1</th>
+    </tr>
+    <tr>
+        <td>Colonne 1</td>
+        <td>Colonne 2</td>
+    </tr>
+    <tr>
+        <td>Colonne 1</td>
+        <td>Colonne 2</td>
+    </tr>
+</table>
+
+<h2>Lien</h2>
+<h3>Lien absolu</h3>
+<a href="https://www.w3schools.com/default.asp">W3Schools</a>
+
+<h3 id="liens">Lien vers une autre page</h3>
+<a href="page3.html">dans le même dossier</a><br>
+<a href="test/page.html">dans le dossier fils</a><br>
+<a href="page3.html" target="_blank">dans une autre fenêtre</a><br>
+<a href="#balises">vers une ancre dans la page</a><br>
+<a href="page3.html#ancre_page3">vers une ancre dans la page</a><br>
+<a href="mailto:alexandre.caignard2019@campus-eni.fr">Envoyer un mail</a><br>
+<a href="image/1582547870739227962.png">Lien vers une image</a> (pareil pour télécharger des fichiers)
+
+<h2 id="images">Images</h2>
+<figure>
+    <img src="image/1582547870739227962.png" alt="Hatsuzuki" style="height: 300px">
+    <figcaption>Hatsuzuki</figcaption>
+</figure>
+
+<h1 id="formulaire">Formulaires HTML</h1>
+<form name="formulaire" method="post" action="">
+    <div>
+        <label for="nom">Votre nom : </label>
+        <input type="text" name="nom" id="nom" placeholder="Votre nom?" size="30" maxlength="10" autofocus="autofocus">
+    </div>
+    <div>
+        <label for="mdp">Votre mot de passe : </label>
+        <input type="password" name="mdp" id="mdp" size="30" required>
+    </div>
+    <div>
+        <label for="ajouter">Ajouter : </label>
+        <textarea name="ajouter" id="ajouter" rows="10" cols="30"></textarea>
+    </div>
+    <div>
+        <label for="favorite">Votre logiciel préféré : </label>
+        <select name="favorite" id="favorite" size="1">
+            <optgroup label="Navigateur">
+                <option value="google">Google Chrome</option>
+                <option value="firefox">Mozilla Firefox</option>
+            </optgroup>
+            <optgroup label="Players">
+                <option value="vlc">VLC Media Player</option>
+                <option value="winamp">Winamp Player</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <fieldset>
+        <legend>Votre pizza avec</legend>
+        <div>
+            <div>
+                <input type="checkbox" id="pizza1" name="pizza1" value="mozarella">
+                <label for="pizza1">Mozarella</label>
+            </div>
+            <div>
+                <input type="checkbox" id="pizza2" name="pizza2" value="tomate">
+                <label for="pizza2">Tomate</label>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend draggable="true">Votre paiement</legend>
+        <div>
+            <input type="radio" id="liquide" name="mode" value="liquide">
+            <label for="liquide">Liquide</label>
+        </div>
+
+        <div>
+            <input type="radio" id="carte" name="mode" value="carte">
+            <label for="carte">Carte Bancaire</label>
+        </div>
+    </fieldset>
+    <div>
+        Votre site web : <input type="url" name="url" size="30">
+    </div>
+    <div>
+        Date : <input type="datetime-local" name="date" size="30">
+    </div>
+    <div>
+        Mois : <input type="month" name="mois" size="30">
+    </div>
+    <!-- Idem avec les types : date, week, time -->
+    <div>
+        Couleur : <input type="color" name="mois" min="0" max="30" step="1">
+    </div>
+    <div>
+        Curseur : <input type="range" value="2" name="curseur" size="30">
+    </div>
+    <input type="reset" value="Réinitialiser">
+    <input type="submit" value="Commander">
+    <button type="submit">
+        <img src="image/1582547870739227962.png" height="30px">
+        Confirmer
+    </button>
+</form>
+
+<button type="button" onclick="alert('Merci !');">
+    Cliquez-moi !
+</button>
+
+<h1 id="multimedia">Les balises multimédia</h1>
+<div>
+    <audio controls="controls">
+        <source src="mymusic/media/audios/JohnDunbarTheme.ogg">
+        <source src="mymusic/media/audios/JohnDunbarTheme.mp3">
+        Votre navigateur ne supporte pas la balise audio
+    </audio>
+</div>
+<div>
+    <video controls="controls">
+        <source src="mymusic/media/videos/big_buck_bunny_427x240.indexed.ogg">
+        Votre navigateur ne supporte pas la balise vidéo
+    </video>
+</div>
+</body>
+</html>
