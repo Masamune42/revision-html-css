@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Révision CSS</title>
+    <link rel="stylesheet" href="css/app2.css"
+</head>
+<body>
+<h1>CSS</h1>
+
+<h2> Héritage de propriétés</h2>
+<span class="grand">Je suis grand,
+<span class="gras"> gras
+<span class="rouge"> et rouge</span></span></span>
+
+<h1> Positionnement</h1>
+<h2>Positionnement des éléments</h2>
+<h3>static</h3>
+<div>
+    Comportement de base, normal. Dans le flux de la page et pas de possibilité de le déplacer.
+</div>
+<h3>relative</h3>
+<div style="position: relative; left: 10px; bottom: 15px">
+    Elément décalé par rapport à lui-même (position dans le flux) suivant les valeurs top, right, bottom et left.
+</div>
+<h3>absolute</h3>
+<div style="position: absolute; left: 0px;top: 470px">
+    Elément positionné par rapport à son ancêtre le plus proche s'il y en a un.
+</div>
+<h3>fixed</h3>
+<div>
+    Elément positionné par rapport à la fenêtre d'affichage.
+</div>
+<h3>position: z-index</h3>
+<div>
+    Valeur de superposition des éléments (-/+)
+</div>
+<h3>float</h3>
+<p><img src="image/1582547870739227962.png" alt="hatsuzuki" style="float: right; width:170px;height:170px;margin-left:15px;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+    egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+    vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in
+    odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+    ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+    venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus.
+    Mauris quis diam velit.</p>
+
+<h3>Propriété display</h3>
+<p style="">
+    A utiliser sur un élément concerné.
+    <img src="image/1582547870739227962.png" alt="hatsuzuki" style="width:170px;height:170px;display: inline">
+    <img src="image/1582547870739227962.png" alt="hatsuzuki" style="width:170px;height:170px;display: block">
+    <img src="image/1582547870739227962.png" alt="hatsuzuki" style="width:170px;height:170px;">
+
+</p>
+<div>Div1</div>
+<div>Div2</div>
+<div style="display: none">Div3</div>
+<div>Div4</div>
+display: none -> disparait sans laisser d'espace vide<br>
+visibility: hidden -> disparait avec un emplacement vide
+</body>
+</html>

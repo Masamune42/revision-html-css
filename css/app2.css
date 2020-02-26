@@ -1,0 +1,30 @@
+/*
+Sélecteur d'instances de balise
+ */
+body {
+    background-color: beige;
+}
+
+/*
+Sélection multiple
+ */
+h1, h2 {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+.grand{
+    font-size: 32px;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+.rouge{
+    color: red;
+}
+
+#hatsuzuki{
+
+}
