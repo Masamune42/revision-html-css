@@ -25,3 +25,6 @@ h1, h2 {
     color: red;
 }
 
+.img-list{
+    list-style-image: url("../image/icon-ok-32x32.png");
+}
