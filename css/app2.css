@@ -17,28 +17,28 @@ h1, h2 {
     margin: 20px;
 }
 
-.grand{
+.grand {
     font-size: 32px;
 }
 
-.gras{
+.gras {
     font-weight: bold;
 }
 
-.rouge{
+.rouge {
     color: red;
 }
 
-.img-list{
+.img-list {
     list-style-image: url("../image/icon-ok-32x32.png");
 }
 
-.rotate:hover{
+.rotate:hover {
     transform: rotate(-20deg);
     transition: transform 2s;
 }
 
-.rotate{
+.rotate {
     transform: rotate(0deg);
 }
 
@@ -47,11 +47,11 @@ h1, h2 {
         transform: rotate(0deg);
     }
     100% {
-       transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 }
 
-.keyframe{
+.keyframe {
     animation-name: exempleKeyframes;
     animation-duration: 5s;
     animation-iteration-count: 5;
