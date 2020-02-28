@@ -2,7 +2,7 @@
 Sélecteur d'instances de balise
  */
 body {
-    background-color: beige;
+    background: beige;
 }
 
 /*
@@ -11,6 +11,10 @@ Sélection multiple
 h1, h2 {
     background-color: cornflowerblue;
     text-align: center;
+    /* boites */
+    border: 2px solid #FF5544;
+    padding: 3px;
+    margin: 20px;
 }
 
 .grand{
@@ -27,4 +31,29 @@ h1, h2 {
 
 .img-list{
     list-style-image: url("../image/icon-ok-32x32.png");
+}
+
+.rotate:hover{
+    transform: rotate(-20deg);
+    transition: transform 2s;
+}
+
+.rotate{
+    transform: rotate(0deg);
+}
+
+@keyframes exempleKeyframes {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(180deg);
+    }
+}
+
+.keyframe{
+    animation-name: exempleKeyframes;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
 }

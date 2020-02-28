@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
 </head>
 <body>
+<div style="text-align: center">
+    <a href="https://htmlcheatsheet.com/css/">HTML CSS CHEATSHEET</a>
+</div>
 <h1>CSS</h1>
 
 <h2> Héritage de propriétés</h2>
@@ -86,5 +89,42 @@ visibility: hidden -> disparait avec un emplacement vide
 <div style="background-color: #FF5544">couleur arrière plan</div>
 <div style="background-image: url('image/icon-ok-32x32.png')">insertion d'image arrière-plan</div>
 
+<h2>Liens hypertextes et pseudo-éléments</h2>
+<ul>
+    <li>a:link</li>
+    <li>a:visited</li>
+    <li>a:active</li>
+    <li>a:focus</li>
+    <li>a:hover</li>
+</ul>
+
+<h2>Propriété des boites</h2>
+<div style="text-align: center"><img style="align-self: center" src="image/boite.png"></div>
+<div>Egalement possible
+    <ul>
+        <li>margin-bottom : 20px</li>
+        <li>margin-top : 30px</li>
+    </ul>
+    La distance entre 2 paragraphes est donnée par la marge la plus grande.
+    Dans ce cas 30px de marge.
+</div>
+<h2>Mise en page</h2>
+<h3>Dépassement</h3>
+<div style="overflow: auto;height: 90px;width: 300px">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec tincidunt lectus, eget commodo eros. Aliquam
+    erat volutpat. Etiam pretium, urna eu dapibus condimentum, massa justo vulputate nisl, at molestie dui nulla id
+    tortor. Suspendisse quis imperdiet lectus, id feugiat metus. Sed dignissim molestie mi eget semper. Interdum et
+    malesuada fames ac ante ipsum primis in faucibus. Duis nec est eget nisi volutpat finibus ac accumsan nibh. Vivamus
+    vulputate varius mi in luctus.
+</div>
+<h2>CSS3</h2>
+<div style="border: 4px solid black; border-radius: 20px">
+    Bords arrondis
+</div>
+<div style="border: 4px solid black; border-radius: 20px 15px 10px 5px">
+    Bords arrondis
+</div>
+<div class="rotate">Texte qui tourne WOW !</div>
+<div class="keyframe">Test de keyfames</div>
 </body>
 </html>
